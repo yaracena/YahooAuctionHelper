@@ -1,0 +1,20 @@
+# Compiled source #
+*.class
+*/bin/*
+
+# IntelliJ IDEA files
+.idea
+*.iws
+*.ipr
+*.iml
+
+# Packages
+*.jar
+
+/logs
+
+# Maven build files
+target
+reports
+application.properties
+avs-rest-service/application.properties

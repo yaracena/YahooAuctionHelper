@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html style="background: #eee;">
+  <head>
+    <meta charset="utf-8">
+    <title>Fantasy Draft Helper</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+
+  <style type="text/css">
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      background-color: #eee;
+    }
+  </style>
+
+  <body style="background: #eee; margin-bottom: 75px;">
+
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home small" aria-hidden="true"></span>  - Draft Helper</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Rankings <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Teams</a></li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <div id="container">
+      <div class="container" style="background-color: #fff; border-radius: 5px;">
+      <h4>Rankings (0.5 PPR) :</h4>
+        <ul class="nav nav-tabs" style="margin-top: 10px">
+          <li class="active"><a data-toggle="tab" href="#home">All</a></li>
+          <li><a data-toggle="tab" href="#menu1">QB</a></li>
+          <li><a data-toggle="tab" href="#menu2">RB</a></li>
+          <li><a data-toggle="tab" href="#menu2">WR</a></li>
+          <li><a data-toggle="tab" href="#menu2">TE</a></li>
+          <li><a data-toggle="tab" href="#menu2">DEF</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+          <div class="col-md-12" style="margin-top: 25px">
+              <table class="table table-bordered">
+                  <tr>
+                      <th><center>#</center></th>
+                      <th><center>Name</center></th>
+                      <th><center>Bye</center></th>
+                      <th><center>Yahoo Proj.</center></th>
+                      <th><center>Yahoo Avg</center></th>
+                      <th><center>Yahoo +/-</center></th>
+                      <th><center>FP $</center></th>
+                      <th><center>Yahoo - FP +/-</center></th>
+                      <th><center>SOS</center></th>
+                      <th><center>OL Ranking</center></th>
+                      <th><center>2016 Stats</center></th>
+                      <th><center>tags</center></th>
+                    </tr>
+                  <tr>
+                      <td><center>1</center></td>
+                      <td><center>Aaron Rodgers</center></td>
+                      <td><center>5</center></td>
+                      <td><center>$30</center></td>
+                      <td><center>$32.4</center></td>
+                      <td><center>-2.4</center></td>
+                      <td><center>$28</center></td>
+                      <td><center>+2</center></td>
+                      <td><center>27th</center></td>
+                      <td><center>4th</center></td>
+                      <td><center>293.70</center></td>
+                      <td>
+                        <center>
+                          <button type="button" class="btn btn-sm btn-success">NB</button>
+                          <button type="button" class="btn btn-sm btn-info">Contract Year</button>
+                        </center>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><center>2</center></td>
+                      <td><center>Aaron Rodgers</center></td>
+                      <td><center>5</center></td>
+                      <td><center>$30</center></td>
+                      <td><center>$32.4</center></td>
+                      <td><center>-2.4</center></td>
+                      <td><center>$28</center></td>
+                      <td><center>+2</center></td>
+                      <td><center>27th</center></td>
+                      <td><center>4th</center></td>
+                      <td><center>293.70</center></td>
+                      <td>
+                        <center>
+                          <button type="button" class="btn btn-sm btn-warning">Suspended</button>
+                          <button type="button" class="btn btn-sm btn-primary">Target in Draft</button>
+                          <button type="button" class="btn btn-sm btn-danger">Injured</button>
+                        </center>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><center>3</center></td>
+                      <td><center>Aaron Rodgers</center></td>
+                      <td><center>5</center></td>
+                      <td><center>$30</center></td>
+                      <td><center>$32.4</center></td>
+                      <td><center>-2.4</center></td>
+                      <td><center>$28</center></td>
+                      <td><center>+2</center></td>
+                      <td><center>27th</center></td>
+                      <td><center>4th</center></td>
+                      <td><center>293.70</center></td>
+                      <td>
+                        <center>
+                          <button type="button" class="btn btn-sm btn-warning">Suspended</button>
+                        </center>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><center>4</center></td>
+                      <td><center>Aaron Rodgers</center></td>
+                      <td><center>5</center></td>
+                      <td><center>$30</center></td>
+                      <td><center>$32.4</center></td>
+                      <td><center>-2.4</center></td>
+                      <td><center>$28</center></td>
+                      <td><center>+2</center></td>
+                      <td><center>27th</center></td>
+                      <td><center>4th</center></td>
+                      <td><center>293.70</center></td>
+                      <td>
+                        <center>
+                          <button type="button" class="btn btn-sm btn-danger">Injured</button>
+                          <button type="button" class="btn btn-sm btn-info">Contract Year</button>
+                        </center>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+
+          </div>
+          <div id="menu2" class="tab-pane fade">
+
+          </div>
+        </div>     
+      </div>
+  </div>
+  <footer class="footer"></footer>
+  </body>
+</html>

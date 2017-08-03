@@ -1,0 +1,31 @@
+database:
+  driverClass: org.postgresql.Driver
+  user: postgres
+  password: Messi1989
+  url: jdbc:postgresql://localhost:5432/nflDraftHelper
+
+# Logging settings.
+logging:
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+  # Logger-specific levels.
+  loggers:
+    "ie.alancasey":
+      level: DEBUG
+      additive: false
+      appenders:
+        - type: file
+          currentLogFilename: ./logs/yahooAuctionHelper.log
+          archivedLogFilenamePattern: ./logs/yahooAuctionHelper-%d.log.gz
+          archivedFileCount: 5
+
+    # Enables the SQL query log and redirect it to a separate file
+    "org.hibernate.SQL":
+      level: DEBUG
+      # This line stops org.hibernate.SQL (or anything under it) from using the root logger
+      additive: false
+      appenders:
+        - type: file
+          currentLogFilename: ./logs/sql.log
+          archivedLogFilenamePattern: ./logs/sql-%d.log.gz
+          archivedFileCount: 1
